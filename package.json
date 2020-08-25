@@ -1,19 +1,41 @@
 {
   "name": "austinpawsite",
   "version": "1.0.0",
-  "description": "Git and Node",
+  "description": "This is a project portfolio.",
   "main": "index.html",
   "scripts": {
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/* -o dist/img",
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/",
+    "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run lite",
-    "lite": "lite-server"
+    "usemin": "usemin blog.html -d dist --htmlmin -o dist/blog.html && usemin stores.html -d dist --htmlmin -o dist/stores.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin shelters.html -d dist --htmlmin -o dist/shelters.html && usemin boarding.html -d dist --htmlmin -o dist/boarding.html && usemin servicedogs.html -d dist --htmlmin -o dist/servicedogs.html && usemin comment.html -d dist --htmlmin -o dist/comment.html",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'"
   },
   "repository": {
     "type": "git"
   },
-  "author": "",
+  "author": "Rupali Pawar",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "copyfiles": "^2.2.0",
+    "imagemin-cli": "^5.1.0",
+    "lite-server": "^2.5.4",
+    "node-sass": "^4.14.1",
+    "onchange": "^7.0.0",
+    "parallelshell": "^3.0.1",
+    "rimraf": "^3.0.2",
+    "usemin-cli": "^0.6.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
   }
 }

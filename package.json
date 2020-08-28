@@ -12,7 +12,7 @@
     "scss": "node-sass -o css/ css/",
     "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "usemin": "usemin blog.html -d dist --htmlmin -o dist/blog.html && usemin stores.html -d dist --htmlmin -o dist/stores.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin shelters.html -d dist --htmlmin -o dist/shelters.html && usemin boarding.html -d dist --htmlmin -o dist/boarding.html && usemin servicedogs.html -d dist --htmlmin -o dist/servicedogs.html && usemin comment.html -d dist --htmlmin -o dist/comment.html",
+    "usemin": "usemin blog.html -d dist --htmlmin -o dist/blog.html && usemin stores.html -d dist --htmlmin -o dist/stores.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin shelters.html -d dist --htmlmin -o dist/shelters.html && usemin boarding.html -d dist --htmlmin -o dist/boarding.html && usemin comment.html -d dist --htmlmin -o dist/comment.html",
     "watch:scss": "onchange 'css/*.scss' -- npm run scss",
     "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'"
   },

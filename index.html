@@ -10,105 +10,339 @@
             <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
             <link rel="stylesheet" href="css/styles.css" />
             <!-- endbuild -->
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-            
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arizonia" />
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=B612" />
             <title>Austin PawSite</title>
         </head>
 
-        <body>
-          <header class"jumbotron jumbotron-fluid">
-            <div>
-              <div class="container">
-                <div class ="row row-content align-items-center">
-                  <div class="col col-sm-3 col-md-2 align-self-center">
-                    <a href="index.html"></a>
-                        <img src="" />
-                     </div>
+        <body data-spy="scroll" data-target="#navbar" data-offset="72" class="position-relative">
+            <header class="fixed-top page-header">
+              <div class="container-fluid container-fluid-max">
+                <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+                  <a class="navbar-brand" href="index.html">Austin Paw-Site</a> 
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-lg-between" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <!-- nav items -->
+                      <li class="nav-item"></li><a class="nav-link" href="#about">About</a></li>
+                      <li class="nav-item"></li><a class ="nav-link" href="#featured-blogs"> Blog</a></li>
+                      <li class="nav-item"></li><a class ="nav-link" href="#featured-parks"> Parks </a></li>
+                      <li class="nav-item"></li><a class ="nav-link" href="#boarding"> Boarding </a></li>
+                      <li class="nav-item"></li><a class ="nav-link" href="#non-profit"> Non-Profit Services </a></li>
+                      <li class="nav-item"></li><a class ="nav-link" href="#stores"> Stores</a></li>
+                      
+                      
+                    </ul>
+                    <div class="text-white">
+                      <a href="tel:+12345678900" class="mr-2">
+                        <i class="fa fa-phone"></i>
+                        <div class="d-none d-xl-inline text-white">+1 (234)567-8900</div>
+                      </a>
+                      <a href="mailto:austinpawsite@gmail.com">
+                        <i class="fa fa-envelope"></i>
+                        <div class="d-none d-xl-inline text-white">austinpawsite@gmail.com</div>
+                      </a>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </header>
+        
+            <main>
+                <!-- Banner Section -->
+              <section id="home" class="d-flex align-items-center position-relative vh-100 cover hero" style="background-image:url(/img/cover.jpg);">
+                <div class="container-fluid container-fluid-max">
+                  <div class="row">
+                    <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                      <h1 class="text-white">Welcome! </h1>
+                      <h2 class="text-white"> Know of another great place? </h2>
+                      <div class="mt-3">
+                        <a class="btn bg-red text-white mr-2" href="feedback.html" role="button"> Let Us Know</a>
+                      </div> 
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
+              </section>
+                <!-- About Section -->
+              <section id="about" class="about">
+                <div class="container-fluid container-fluid-max">
+                  <div class="row text-center py-5">
+                    <div class="col-12 pb-4">
+                      <h1 class="mt-3 text-red ">About</h1>
+                      <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                    </div>
+                  </div>
+                </div>
 
+                       <!-- Blog Section -->
+  
+              <section id="featured-blogs" class="featured-blogs bg-lightblue">
+                  <div class="row no-gutters">
+                    <div class="col-12 col-md-6 d-flex align-items-center order-1 order-md-0">
+                      <div class="p-15">
+                        <h3>10 Best Cheap products for cat owners</h3>
+                        <p><strong>check out local stores</strong> is a town and municipality in Møre og Romsdal County, Norway. It is part of the traditional district of Sunnmøre and the centre of the Ålesund Region. It is a sea port and is noted for its concentration of Art Nouveau
+                          architecture. The town of Ålesund is the administrative centre of Ålesund Municipality, as well as the principal shipping town of the Sunnmøre district. </p>
+                        <p>The 99-square-kilometre (38 sq mi) municipality is the 382nd largest by area out of the 422 municipalities in Norway. Ålesund is the 17th most populous municipality in Norway with a population of 47,199. The municipality's population density
+                          is 506.6 inhabitants per square kilometre (1,312/sq mi) and its population has increased by 14% over the last decade.</p>
+                        <a class="btn bg-red text-white"  href="#" role="button">Read More →</a>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 order-0 order-md-1">
+                      <div class="vh-100 cover" style="background-image: url(/img/blog\ cat.jpg);">
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 order-2">
+                      <div class="vh-100 cover" style="background-image: url(/img/blog\ people.jpg);"></div>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex align-items-center order-3">
+                      <div class="p-15">
+                        <h3>Explore Austin's parks</h3>
+                        <p><strong>Dog Parks</strong> is a 19th-century Romanesque Revival palace on a rugged hill above the village of Hohenschwangau near Füssen in southwest Bavaria, Germany. The palace was commissioned by Ludwig II of Bavaria as a retreat
+                          and in honour of Richard Wagner. Ludwig paid for the palace out of his personal fortune and by means of extensive borrowing, rather than Bavarian public funds.</p>
+                        <p>The castle was intended as a home for the king, until he died in 1886. It was open to the public shortly after his death. Since then more than 61 million people have visited Neuschwanstein Castle. More than 1.3 million people visit annually,
+                          with as many as 6,000 per day in the summer.</p>
+                        <a class="btn bg-red text-white" target="_blank" href="#" role="button">Read More →</a>
+                      </div>
+                    </div>
+                  </div>
+                </section>
 
-            <nav class= "nav top-right">
-              <div class="container">
+                <!-- Parks -->
+
+                <section id="featured-parks" class="featured-parks">
+                  <div class="container-fluid container-fluid-max">
+                    <div class="row text-center py-5">
+                      <div class="col-12 pb-4">
+                        <h2 class="text-red"><a href="parks.html">Parks</a></h2>
+                      </div>
+                      <!-- List of parks  no.1 -->
+                      <div class="col-12 col-sm-6 col-lg-3">
+                        <span class="fa-stack fa-2x">
+                          <i class="fa fa-circle fa-stack-2x text-red"></i>
+                          <i class="fa fa-map-marked fa-stack-1x text-white"></i>
+                        </span>
+                        <h3 class="mt-3 text-red h4"><a target="_blank" href="https://www.google.com/maps/dir//austin+dog+parks/@30.1186377,-97.9516025,11z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8644b4545c69e0df:0xf11dba0a8c4e3554!2m2!1d-97.7365032!2d30.24925">Norwood Estate Dog Park</a></h3>
+                        <p>Fenced-off dog park with some park benches, tree shade, water supply & drinking bowls.</p>
+                        <a class="btn bg-red text-white" target="_blank" href="https://www.google.com/search?q=norwood+estate+dog+park%2Fimages&tbm=isch&ved=2ahUKEwjXmqKO2bnrAhULFqwKHbsbCXUQ2-cCegQIABAA&oq=norwood+estate+dog+park%2Fimages&gs_lcp=CgNpbWcQA1DfigJY644CYP2hAmgAcAB4AIABTIgBiQGSAQEymAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=XcRGX5f4EYussAW7t6SoBw&bih=591&biw=1251" role="button">Pictures→</a>
+                      </div>
+                        <!-- no.2 -->
+                      <div class="col-12 col-sm-6 col-lg-3">
+                        <span class="fa-stack fa-2x">
+                          <i class="fa fa-circle fa-stack-2x text-red"></i>
+                          <i class="fa fa-map-marked fa-stack-1x text-white"></i>
+                        </span>
+                        <h3 class="mt-3 text-red h4"><a target="_blank" href="https://www.google.com/maps/dir//austin+dog+parks/@30.1397906,-97.9618401,11z/data=!4m8!4m7!1m0!1m5!1m1!1s0x865b4aac90d190c3:0xc4add3ec4062dcdf!2m2!1d-97.7868386!2d30.2908494"> Red Bud Isle</a></h3>
+                        <p>Lakefront off-leash dog park with 13 acres of recreational space, plus hiking, canoeing & kayaking.</p>
+                        <a class="btn bg-red text-white" target="_blank" href="https://www.google.com/search?q=red+bud+isle+dog+park%2Fimages&tbm=isch&ved=2ahUKEwjT4big2bnrAhURbK0KHRopCtEQ2-cCegQIABAA&oq=red+bud+isle+dog+park%2Fimages&gs_lcp=CgNpbWcQAzoCCAA6BggAEAcQHjoECAAQHjoGCAAQCBAeUL2RC1jR_gtgwoEMaAlwAHgAgAH2AYgB8BiSAQYxOS41LjWYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=g8RGX5OUGZHYtQWa0qiIDQ&bih=591&biw=1251" role="button">Pictures→</a>
+                      </div>
+                      <!-- no.3 -->
+                      <div class="col-12 col-sm-6 col-lg-3">
+                        <span class="fa-stack fa-2x">
+                          <i class="fa fa-circle fa-stack-2x text-red"></i>
+                          <i class="fa fa-map-marked fa-stack-1x text-white"></i>
+                        </span>
+                        <h3 class="mt-3 text-red h4"><a target="_blank" href="https://www.google.com/maps/dir//austin+dog+parks/@30.1278769,-97.9517572,11z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8644b51aa8bf771f:0xc3214fb1b2e1c4c8!2m2!1d-97.7531327!2d30.2635228"> Auditorium-Shores</a></h3>
+                        <p>Off-leash dog park with great view. Located within the larger Town Lake Park in downtown.  </p>
+                        <a class="btn bg-red text-white" target="_blank" href="https://www.google.com/search?q=Auditorium+Shores+Dog+Park/images&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiA8p_n4LnrAhVPKa0KHbJ4CA8Q_AUoAXoECAwQAw&biw=1242&bih=591&dpr=2" role="button">Pictures→</a>
+                      </div>
+                      <!-- no.4 -->
+                      <div class="col-12 col-sm-6 col-lg-3">
+                        <span class="fa-stack fa-2x">
+                          <i class="fa fa-circle fa-stack-2x text-red"></i>
+                          <i class="fa fa-map-marked fa-stack-1x text-white"></i>
+                        </span>
+                        <h3 class="mt-3 text-red h4"><a target="_blank" href="https://www.google.com/maps/dir//austin+dog+parks/@30.0735621,-98.0062005,10.44z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8644b307db10631f:0x30d4d584b5c5022a!2m2!1d-97.7434921!2d30.1720231">Dog Park Blue </a></h3>
+                        <p>Dog park with lots of open space for dogs to run and a beautiful gazebo for owners to relax and watch them play. No water fountains</p>
+                        <a class="btn bg-red text-white" target="_blank" href="" role="button">No Pictures→</a>
+                      </div>
+                      <!-- container -->
+                      <div class="container-fluid container-fluid-max">
+                        <div class="row text-center py-5">
+                          <div class="col-12 pb-4">
+                          </div>
+                          <!-- no.5 -->
+                          <div class="col-12 col-sm-6 col-lg-3">
+                            <span class="fa-stack fa-2x">
+                              <i class="fa fa-circle fa-stack-2x text-red"></i>
+                              <i class="fa fa-map-marked fa-stack-1x text-white"></i>
+                            </span>
+                            <h3 class="mt-3 text-red h4"><a target="_blank" href="https://www.google.com/maps/dir//austin+dog+parks/@30.1720217,-97.9360823,11z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8644cb0680450537:0x4e0cbaed43e7b575!2m2!1d-97.7470991!2d30.3521521"> Great Northen</a></h3>
+                            <p>Large off-leash dog area featuring walking paths, a retention pond & grassy open areas.</p>
+                            <a class="btn bg-red text-white" target="_blank" href="https://www.austintexas.gov/sites/default/files/files/Parks/GIS/Great_Northern_Detention_Basin_OLA_Kiosk.pdf" role="button">Pictures→</a>
+                          </div>
+                          <!-- no.6 -->
+                          <div class="col-12 col-sm-6 col-lg-3">
+                            <span class="fa-stack fa-2x">
+                              <i class="fa fa-circle fa-stack-2x text-red"></i>
+                              <i class="fa fa-map-marked fa-stack-1x text-white"></i>
+                            </span>
+                            <h3 class="mt-3 text-red h4"><a target="_blank" href="https://www.google.com/maps/dir//austin+dog+parks/@30.1398764,-97.9461497,11z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8644b52991bf101d:0x4e42112b82961ba1!2m2!1d-97.7239523!2d30.2914103"> Hancock Dog Park</a></h3>
+                            <p>Fenced dog park, spacious with beautiful hills. Free parking on the street. No water fountains provided.</p>
+                            <a class="btn bg-red text-white" target="_blank" href="https://www.google.com/search?q=hancock+dog+park+austin+tx&tbm=isch&ved=2ahUKEwjZ1bDUhrrrAhURLqwKHaXQBWcQ2-cCegQIABAA&oq=hancock+dog+park+austin+tx&gs_lcp=CgNpbWcQA1DrlgFYxaEBYPWpAWgAcAB4AIABUIgB1wOSAQE3mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=H_RGX5nKOJHcsAWloZe4Bg&bih=591&biw=1196&hl=en" role="button">Pictures→</a>
+                          </div>
+                          <!-- no. 7 -->
+                          <div class="col-12 col-sm-6 col-lg-3">
+                            <span class="fa-stack fa-2x">
+                              <i class="fa fa-circle fa-stack-2x text-red"></i>
+                              <i class="fa fa-map-marked fa-stack-1x text-white"></i>
+                            </span>
+                            <h3 class="mt-3 text-red h4"><a target="_blank" href="https://www.google.com/maps/dir//austin+dog+parks/@30.1402849,-97.9513975,11z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8644b57cf46f6bd5:0x8130dc2af98241dd!2m2!1d-97.7506211!2d30.2921776">Shoal Creek Green Belt </a></h3>
+                            <p> A ribbon of a park spanning nearly 81 acres, which include shady trails & a dog park.</p>
+                            <a class="btn bg-red text-white" target="_blank" href="https://www.google.com/search?q=Shoal+Creek+Greenbelt+dog+park+austin%2Fimages&tbm=isch&ved=2ahUKEwit3sTVkLrrAhUIc60KHeSIBFkQ2-cCegQIABAA&oq=Shoal+Creek+Greenbelt+dog+park+austin%2Fimages&gs_lcp=CgNpbWcQA1CfR1ixV2DDXWgAcAB4AIABWogB9QSSAQE5mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=nv5GX62XK4jmtQXkkZLIBQ&bih=591&biw=917" role="button">Pictures→</a>
+                          </div>
+                          <!-- no.8 -->
+                          <div class="col-12 col-sm-6 col-lg-3">
+                            <span class="fa-stack fa-2x">
+                              <i class="fa fa-circle fa-stack-2x text-red"></i>
+                              <i class="fa fa-map-marked fa-stack-1x text-white"></i>
+                            </span>
+                            <h3 class="mt-3 text-red h4"><a target="_blank" href="https://www.google.com/maps/dir//austin+dog+parks/@30.1366912,-97.9513975,11z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8644b56c9a2cc885:0xb8338b01c23156bf!2m2!1d-97.757459!2d30.2769829">West Austin Neighborhood Park </a></h3>
+                            <p>Fully fenced,Lots of shade. Great spot for dogs and people.</p>
+                            <a class="btn bg-red text-white" target="_blank" href="https://www.google.com/search?q=West+Austin+Neighborhood+Park&tbm=isch&ved=2ahUKEwin4ubbkLrrAhULzKwKHVHLCXYQ2-cCegQIABAA&oq=West+Austin+Neighborhood+Park&gs_lcp=CgNpbWcQAzICCAAyBAgAEBhQo5MRWKOTEWCloxFoAHAAeACAAVaIAVaSAQExmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=q_5GX-fgM4uYswXRlqewBw&bih=591&biw=917" role="button">Pictures→</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!-- featured Boarding  -->
+                <section class="ml-5"> 
                 <div class="row">
-                  <div class="col">
-                    <a class="disc l1" "nav-link" href="blog.html">
-                      <div>Blog</div>
-                    </a>
-                    <a class="disc l2">
-                      <div>Boarding</div>
-                    </a>
-                    <a class="disc l3">
-                      <div>Stores</div>
-                    </a>
-                    <a class="disc l4">
-                      <div>Parks</div>
-                    </a>
-                    <a class="disc l5 toggle">
-                        Toggle Link
-                    </a>
+                  <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="/img/boarding 1.jpg" alt="Lights" style="width:100%">
+                        <div class="caption">
+                          <i class="fa fa-building text-red"></i><a href="https://www.dogtownaustin.com/">Austin Dogtown Daycare and Boarding</a>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="/img/boarding 2.jpg" alt="Nature" style="width:100%">
+                        <div class="caption">
+                          <i class="fa fa-building text-red"></i><a href="https://www.austinpetranch.com/">Austin Pet Ranch</a>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="/img/boarding 3.jpg" alt="Fjords" style="width:100%">
+                        <div class="caption">
+                          <i class="fa fa-building text-red"></i><a href="https://www.remingtonpetranch.com/"> Luxury Cat Boarding In South Austin</a>
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div> 
-            </nav>
-          </header>
+              </section>
+                
+                <section id="boarding" class="boarding py-5 bg-lightblue">
+                  <div class="container-fluid container-fluid-max">
+                    <div class="row justify-content-center" >
+                      <div class="col-12 col-md-auto py-3 text-center">
+                        <h2 class="mb-0 text-red">Looking For Pet Hotels?</h2>
+                        <p class="mb-0 h4 text-red font-weight-normal">Austin offers gazillion great options!</p>
+                      </div>
+                      <div class="col-12 col-md-auto d-flex justify-content-center align-items-center">
+                        <a class="btn bg-red text-white font-weight-bold" href="boarding.html" role="button">
+                          Check it out 
+                          <i class="ml-1 fas fa-hand-point-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </section>
 
-
-          <div class="container">
-            <div class="row">
-              <div class="col">
-
+                <!-- Shelter -->
+                <section id="non-profit" class="non-profit py-5">
+                  <div class="container-fluid container-fluid-max">
+                    <div class="row">
+                      <div class="col-12">
+                        <h2 class="pb-3 text-red">Non-Profit Services </h2>
+                      </div>   
+                <div class="col-12 col-sm-6">
+                  <a href="https://www.servicedogs.org/" class="text-white">
+                    <figure class="position-relative overflow-hidden">
+                      <img class="img-fluid" src="img/Service dog.jpg" >
+                      <figcaption class="d-flex align-items-center justify-content-center position-absolute">
+                        <h3 >Service Dogs Inc</h3> 
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col-12 col-md-6">
+                  <a href="shelters.html" class="text-white">
+                    <figure class="position-relative overflow-hidden">
+                      <img class="img-fluid" src="/img/dog.jpg" >
+                      <figcaption class="d-flex align-items-center justify-content-center position-absolute">
+                        <h3>Find a Companion through local Shelters</h3>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+              </div>
               </div>
             </div>
-          </div>
+          </section>
+          <!-- Stores -->
+          <section id="stores" class="stores">
+          <div class="container-fluid container-fluid-max">
+            <div class="row">
+              <div class="col text-center">
+                <a class="btn bg-red text-white" href="stores.html" role="button">Local Pet Stores ↓</a>
+              </div>
+            </div>
+          </section>
 
-          
+          <!-- Feedback -->
+          <section id="feedback" class="feedback py-5">
+            <div class="container-fluid container-fluid-max">
+              <div class="row">
+                <div class="col text-center">
+                  <a class="btn bg-red text-white" href="feedback.html" role="button">Feed Back</a>
+                </div>
+              </div>
+            </section>   
+
+          </main>
 
         
         
 
+          <!-- footer -->
+            <foooter class="py-5 m-5 page-footer">
+            <div class="container-fluid container-fluid-max">
+                <div class="row">
+                    <div class="col-12 col-md-6 footer-child copyright">
+                        AustinPawSite © 2020 All Rights Reserved
+                    </div>
+                    <div class="col-12 col-md-6 footer-child footer-links">
+                        <a href="" class="mr-3">Privacy Policy</a>
+                        <a href="">FAQ</a>
+                        <div>
+                            <small>Made with <i class="fa fa-heart text-red"></i> by <a href="https://www.linkedin.com/in/rupalipawar6/" target="_blank">Rupali Pawar</a>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+          </footer>
 
-              <footer class="site-footer" id="site-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-4 col-sm-2 offset-1">
-                            <h5>Links</h5>
-                            <ul class="list-unstyled">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="comment.html">Feedback</a></li>
-                                <li><a href="petboarding.html">Pet Boarding</a></li>
-                                <li><a href="parks.html">Parks</a></li>
-                                <li><a href="stores.html">Stores</a></li>
-                                <li><a href="servicedogs.html">Service Dogs Inc</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-6 col-sm-5 text-center">
-                            <h5>Social</h5>
-                            <a class="btn btn-social-icon btn-instagram"  href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-                            <a class="btn btn-social-icon btn-facebook"  href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-                            <a class="btn btn-social-icon btn-twitter"  href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                            <a class="btn btn-social-icon btn-google"  href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                        </div>
-                        <div class="col-sm-4 text-center">
-                            <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br />
-                            <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
-                        </div>
-                </div>
-                </div>
-            </footer>
+              
         
 
 
       
-        <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-            <!-- build:js js/main.js -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <!-- endbuild -->
-</body>
+          <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+          <!-- build:js js/main.js -->
+          <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+          <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+          <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+          <script src="js/scripts.js"></script>
+          <!-- endbuild -->
+      </body>
     </html>

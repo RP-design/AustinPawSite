@@ -1,6 +1,5 @@
-HTML CSS JSResult
-EDIT ON
-/* RESET RULES & HELPER CLASSES
+
+/*  HELPER CLASSES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root {
   --lightblue: #f6f9fc;
@@ -39,6 +38,10 @@ a:hover {
 .p-15 {
   padding: 15px;
 }
+
+
+
+
 
 /* SCROLL ANIMATIONS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -101,7 +104,7 @@ a:hover {
 /* MEDIUM SCREENS */
 @media screen and (max-width: 991px) {
   .page-header {
-    background: var(--red);
+    background: (--red);
   }
 }
 
@@ -111,7 +114,7 @@ a:hover {
     text-align: center;
   }
 }
-/* form */
+/* Feedback form */
 .content {
   max-width: 800px;
   margin: auto;
@@ -119,7 +122,7 @@ a:hover {
   padding: 20px;
 }
 
-/* POPULAR DESTINATIONS SECTION
+/* Non-PROFIT SECTION
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .non-profit figure {
   margin-bottom: 30px;
@@ -141,4 +144,54 @@ a:hover {
 .non-profit a:hover img {
   transform: scale(1.25);
   filter: none;
+}
+
+/* Stores
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+* {box-sizing: border-box}
+body {font-family: "B612", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 1200px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 1200px;
 }

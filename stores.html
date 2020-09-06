@@ -16,47 +16,114 @@
         </head>
         
         <body style="background-color:rgba(238, 230, 228, 0.685);">
-            <div class="container">
+            <div class="container-fluid-max">
                 <div class="row">
-                    <div class="col content" style="background-color:rgba(30, 148, 138, 0.973);">
+                    <div class="col" style="background-color:rgba(172, 13, 40, 0.973);">
                         <ol class="breadcrumb" style="background-color:lightgrey">
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                             <li class="breadcrumb-item active">Stores</li>
                         </ol>
                     </div>
                 </div>
-            <div class="row">
-                <div class="col-4 py-5">
-                  <div class="list-group"  id="list-tab" role="tablist">
-                    <a class="list-group-item list-group-item-action active" id="list-stores-list" data-toggle="list" href="#list-stores" role="tab" aria-controls="stores">Stores</a>
-                    <a class="list-group-item list-group-item-action" id="list-parks-list" data-toggle="list" href="#list-parks" role="tab" aria-controls="parks">Parks</a>
-                    <a class="list-group-item list-group-item-action" id="list-boarding-list" data-toggle="list" href="#list-boarding" role="tab" aria-controls="boarding">Boarding</a>
-                    <a class="list-group-item list-group-item-action" id="list-shelters-list" data-toggle="list" href="#list-shelters" role="tab" aria-controls="shelters">Shelters</a>
-                  </div>
-                </div>
-                
-                <div class="col-8">
-                  <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="list-stores" role="tabpanel" aria-labelledby="list-stores-list">
-                        <ul>
+           
 
-                        <li><a href="https://www.shaggydogmarket.com/">Shaggy Dog Market</a></li>
+        <section>
+            <div class="tab">
+                <button class="tablinks" onclick="openPlace(event, 'stores')" id="defaultOpen">Stores</button>
+                <button class="tablinks" onclick="openPlace(event, 'boarding')">Boarding</button>
+                <button class="tablinks" onclick="openPlace(event, 'parks')">Parks</button>
+                <button class="tablinks" onclick="openPlace(event, 'shelters')">Shelters</button>
+                <button class="tablinks" onclick="openPlace(event, 'equine-therapy')">Equine Therapy</button>
+                <button class="tablinks" onclick="openPlace(event, 'vet')">Veternarian Offices</button>
+                <button class="tablinks" onclick="openPlace(event, 'cattery')">Cattery</button>
+                <button class="tablinks" onclick="openPlace(event, 'restaurants')">Restaurants</button>
+                <button class="tablinks" onclick="openPlace(event, 'blogs')">Blogs</button>
+              </div>
+              
+              <div id="stores" class="tabcontent">
+                <h3>Local Pet stores Austin </h3>
+                <ul>
+                    <li><a href="https://www.shaggydogmarket.com/">Shaggy Dog Market</a></li>
+                    <li><a href="https://tomlinsons.com/">Tomlinson's</a></li>
+                    <li><a href="http://galleryofpets.com/cats-dogs/">Gallery Of Pets</a></li>
+                    <li><a href="https://healthypetaustin.com/">Healthy Pet(Seaholm Dr/ Arbor Trail)</a></li>
+                    <li><a href="https://www.pandfpet.shop/">P & F Pet Provisions</a></li>
+                    <li><a href="https://www.pawsonchicon.com/">Paws On Chicon</a></li>
+                    <li><a href="https://www.gwaustin.com/">Gecko World Austin(Online)</a></li>
+                    <li><a href="https://www.google.com/maps/dir//Great+Outdogs,+1210+Barton+Springs+Rd,+Austin,+TX+78704/@30.2611249,-97.8278011,12z/data=!4m9!4m8!1m0!1m5!1m1!1s0x8644b51a2c1df0bb:0x5e050ea581620347!2m2!1d-97.7575886!2d30.2609953!3e0">Great Outdogs</a></li>
+                    <li><a href="https://rivers-reefs-pet-center.business.site/?utm_source=gmb&utm_medium=referral">Rivers & Reefs Pet Center</a></li>
+                    <li><a href="https://feline-nutrition.org/feline-nutrition-resource-center/raw-food-retailers-southwest/bark-n-purr-pet-center">Bark 'N Purr Pet Center</a></li>
+                    <div id="stores" ><p><h3>Buda/Kyle<h3></p></div>
+                        <li><a href="https://www.petsuppliesplus.com/Store/TX/Buda/Buda/4180">Pet Supplies Plus Buda</a></li>
+                        <li><a href="https://www.dollargeneral.com/">Dollar General</a></li>
+                        <li><a href="https://www.facebook.com/ChloesBarkery/">Chloe's Barkery</a></li>
+                        <li><a href="hhttps://www.shaggydogmarket.com/">Shaggy Dog Market</a></li>
+                    <div id="stores" ><p><h3>Wimberly<h3></p></div>
+                        <li><a href="https://wimberley-feed-pet-supply.business.site/">Wimberley Feed & Pet Supply</a></li>
+                        <li><a href="https://www.kingfeedandhardware.com/">King Feed</a></li>
+                        <li><a href="https://wagmorehissless.com/">Wag More Hiss Less</a></li>
+                        <li><a href="https://southtexas.naturesselectpetfood.com/">Natures Select Of South Texas</a></li>
+                    <div id="stores" ><p><h3>Dripping Springs<h3></p></div>
+                        <li><a href="https://www.dollargeneral.com/">Dog Bark Naturals</a></li>
+                        <li><a href="https://drippingsprings.wbu.com/?utm_source=google&utm_medium=local&utm_campaign=localmaps&utm_content=501">Wild Birds Unlimited</a></li>
+                        <li><a href="https://quicktag.com/">Quick-Tag</a></li>
+                        <li><a href="https://www.facebook.com/WholePetsMarketDrippingSprings/">Whole Pets Market</a></li>
+                    <div id="stores" ><p><h3>Cattery<h3></p></div>
+                        <li><a href="http://www.giannasdolls.com/">Giannas-Dolls</a></li>
+                        <li><a href="https://www.bespokebengals.com/">Bespoke Bengals</a></li>
+                        <li><a href="https://www.bengal-katz.com/">Katznjamr Bengals</a></li>
                     
+                </ul>
+              </div>
+              
+              <div id="boarding" class="tabcontent">
+                <h3>Boarding</h3> 
+                    <ul>
+                    <li><a href="https://www.shaggydogmarket.com/">Shaggy Dog Market</a></li>
+                
 
-                        
-                    </ul>
-                    </div>
-                    <div class="tab-pane fade" id="list-parks" role="tabpanel" aria-labelledby="list-parks-list">...</div>
-                    <div class="tab-pane fade" id="list-boarding" role="tabpanel" aria-labelledby="list-boarding-list">...</div>
-                    <div class="tab-pane fade" id="list-shelters" role="tabpanel" aria-labelledby="list-shelters-list">...</div>
-                  </div>
+                    
+                </ul>
                 </div>
               </div>
-        </body>
-        <section>
+              
+              <div id="parks" class="tabcontent">
+                <h3>Parks</h3>
+                
+              </div>
+
+              <div id="shelters" class="tabcontent">
+                <h3>Shelters</h3>
+                
+              </div>
+              <div id="equine-therapy" class="tabcontent">
+                <h3>Equine Therapy</h3>
+                
+              </div>
+              <div id="vet" class="tabcontent">
+                <h3>Veternarian Offices</h3>
+                
+              </div>
+
+              <div id="cattery" class="tabcontent">
+                <h3>Cattery</h3>
+                
+              </div>
+            </div>
+            <div id="restaurants" class="tabcontent">
+              <h3>Pets Friendly Restaurants</h3>
+              
+            </div>
+        </div>
+        <div id="blogs" class="tabcontent">
+          <h3>Blogs</h3>
+          
+        </div>
+              
 
         </section>
-            <footer class=" py-5 fixed-bottom">
+
+            <footer class=" page-footer">
                 <div class="container-fluid container-fluid-max">
                     <div class="row">
                         <div class="col-12 col-md-6 footer-child copyright">
@@ -73,6 +140,8 @@
                     </div>
                 </div>
             </footer>
+            
+                   
 
         
 
